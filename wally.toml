@@ -1,0 +1,8 @@
+[package]
+name = "floch/rubine"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+rubine = "mark-marks/rubine-roblox@0.1.0-rc.11"

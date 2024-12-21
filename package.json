@@ -1,0 +1,45 @@
+{
+  "name": "@rbxts/rubine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/init.lua",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp && npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "3.0.0-types.0",
+    "@rbxts/jecs": "0.4.1-rc.0",
+    "@rbxts/types": "^1.0.813",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "prettier": "^3.4.2",
+    "roblox-ts": "^3.0.0",
+    "bumpp": "^9.9.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@rbxts/jecs": "^0.4.1-rc.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mark-Marks/rubine"
+  }
+}
